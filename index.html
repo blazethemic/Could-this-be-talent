@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Could This Be Talent?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body{
-margin:0;
 background:#000;
-font-family:Arial,sans-serif;
 color:white;
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
 }
 
 .hero img{
@@ -19,56 +20,41 @@ display:block;
 }
 
 .container{
+padding:20px;
 max-width:900px;
 margin:auto;
-padding:20px;
 }
 
-.section{
+.card{
 background:#111;
 padding:25px;
-margin-bottom:25px;
 border-radius:15px;
+margin-bottom:25px;
 }
 
 h1,h2{
 text-align:center;
 }
 
-p{
-font-size:20px;
-line-height:1.6;
-}
-
 .pay-btn{
-text-align:center;
-}
-
-.pay-btn a{
+display:block;
 background:#ff4d00;
 color:white;
-padding:20px 35px;
+text-align:center;
+padding:20px;
 font-size:28px;
 font-weight:bold;
-text-decoration:none;
 border-radius:12px;
-display:inline-block;
+text-decoration:none;
 }
 
-label{
-display:block;
-margin-top:15px;
-margin-bottom:5px;
-}
-
-input,
-select,
-textarea{
+input,select,textarea{
 width:100%;
-padding:14px;
-border:none;
+padding:15px;
+margin-top:10px;
+margin-bottom:15px;
 border-radius:8px;
-font-size:18px;
+border:none;
 }
 
 button{
@@ -76,24 +62,25 @@ width:100%;
 padding:18px;
 background:#ff4d00;
 color:white;
+font-size:20px;
 border:none;
 border-radius:10px;
-font-size:22px;
-margin-top:20px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <div class="hero">
-<img src="talent-poster.jpg" alt="Could This Be Talent">
+
+<img src="talent-poster.jpg">
+
 </div>
 
 <div class="container">
 
-<div class="section">
+<div class="card">
 
 <h2>Think You Got Talent?</h2>
 
@@ -109,21 +96,20 @@ Show us what you've got.
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Entry Fee: $50</h2>
 
-<div class="pay-btn">
+<a class="pay-btn"
+href="https://buy.stripe.com/6oUbJ3alFgz24FH8N8afS01">
 
-<a href="https://buy.stripe.com/6oUbJ3alFgz24FH8N8afS01">
 🎤 Pay $50 & Submit Entry
+
 </a>
 
 </div>
 
-</div>
-
-<div class="section">
+<div class="card">
 
 <h2>Contestant Application</h2>
 
@@ -132,32 +118,37 @@ Show us what you've got.
 <label>Full Name</label>
 <input type="text" name="name" required>
 
-<label>Email Address</label>
+<label>Email</label>
 <input type="email" name="email" required>
 
 <label>Phone Number</label>
 <input type="tel" name="phone">
 
 <label>Talent Type</label>
+
 <select name="talent">
+
 <option>Singer</option>
 <option>Rapper</option>
 <option>Dancer</option>
 <option>Comedian</option>
 <option>Magician</option>
-<option>Impersonator</option>
 <option>Actor</option>
 <option>Other</option>
+
 </select>
 
-<label>Instagram / Social Media</label>
-<input type="text" name="social">
+<label>Instagram</label>
+<input type="text" name="instagram">
 
 <label>Tell Us About Your Talent</label>
-<textarea name="message" rows="5"></textarea>
+
+<textarea name="message"></textarea>
 
 <button type="submit">
+
 Submit Application
+
 </button>
 
 </form>
@@ -168,10 +159,3 @@ Submit Application
 
 </body>
 </html>
-<html>
-<head>
-<title>Could This Be Talent?</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-
